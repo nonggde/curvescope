@@ -1,0 +1,340 @@
+{
+  "schema": "curvescope/v1",
+  "sdk": {
+    "name": "@meteora-ag/dynamic-bonding-curve-sdk",
+    "version": "1.5.13"
+  },
+  "model": "Independent first-buy quotes against an empty virtual pool at each requested elapsed timestamp. Not a sequence of trades.",
+  "quoteToken": {
+    "symbol": "USDC",
+    "decimals": 6
+  },
+  "baseToken": {
+    "decimals": 6
+  },
+  "inputs": {
+    "supply": 1000000000,
+    "initialFdv": 50000,
+    "migrationFdv": 500000,
+    "startFeeBps": 200,
+    "endFeeBps": 50,
+    "durationMinutes": 60,
+    "elapsedMinutes": 0,
+    "buyAmount": 1000,
+    "slippageBps": 100,
+    "lockedLpPercent": 100
+  },
+  "assumptions": {
+    "network": "offline",
+    "dynamicFees": false,
+    "transferFees": false,
+    "referral": false,
+    "vesting": false,
+    "migration": "DAMM v2; 100 bps trading fee after migration; post-migration swaps not simulated",
+    "activation": "relative seconds; timestamp 0",
+    "feeSchedule": "linear, one period per minute",
+    "lockedLp": 100
+  },
+  "summary": {
+    "migrationQuoteThreshold": 120126.536676,
+    "initialPrice": 0.000050000001369840496,
+    "selected": {
+      "requested": 1000,
+      "used": 1000,
+      "unfilled": 0,
+      "output": 19260248.683059,
+      "minimumOutput": 19067646.196228,
+      "fee": 20,
+      "averagePrice": 0.00005192040956769077,
+      "curveImpactPct": 1.7639999646649418,
+      "costVsSpotPct": 3.840816290474436,
+      "endPrice": 0.000051779559862632424,
+      "exact": {
+        "includedFeeInputAmount": "1000000000",
+        "excludedFeeInputAmount": "980000000",
+        "outputAmount": "19260248683059",
+        "minimumAmountOut": "19067646196228",
+        "nextSqrtPrice": "132739109489935119"
+      }
+    }
+  },
+  "sizeStress": [
+    {
+      "requested": 1201.265367,
+      "used": 1201.265367,
+      "unfilled": 0,
+      "output": 23056231.594762,
+      "minimumOutput": 22825669.278814,
+      "fee": 24.025307999999995,
+      "averagePrice": 0.00005210154842792731,
+      "curveImpactPct": 2.119032063750459,
+      "costVsSpotPct": 4.203094001022256,
+      "endPrice": 0.000052141484976694865,
+      "exact": {
+        "includedFeeInputAmount": "1201265367",
+        "excludedFeeInputAmount": "1177240059",
+        "outputAmount": "23056231594762",
+        "minimumAmountOut": "22825669278814",
+        "nextSqrtPrice": "133202206898543098"
+      }
+    },
+    {
+      "requested": 6006.326834,
+      "used": 6006.326834,
+      "unfilled": 0,
+      "output": 106445890.011477,
+      "minimumOutput": 105381431.111362,
+      "fee": 120.1265370000001,
+      "averagePrice": 0.00005642610375423982,
+      "curveImpactPct": 10.595160322343023,
+      "costVsSpotPct": 12.85220441668924,
+      "endPrice": 0.0000611564491091152,
+      "exact": {
+        "includedFeeInputAmount": "6006326834",
+        "excludedFeeInputAmount": "5886200297",
+        "outputAmount": "106445890011477",
+        "minimumAmountOut": "105381431111362",
+        "nextSqrtPrice": "144258314336920060"
+      }
+    },
+    {
+      "requested": 12012.653668,
+      "used": 12012.653668,
+      "unfilled": 0,
+      "output": 194279546.565256,
+      "minimumOutput": 192336751.099603,
+      "fee": 240.2530740000002,
+      "averagePrice": 0.00006183179794464418,
+      "curveImpactPct": 21.19032064468598,
+      "costVsSpotPct": 23.663592501300435,
+      "endPrice": 0.00007343547110170633,
+      "exact": {
+        "includedFeeInputAmount": "12012653668",
+        "excludedFeeInputAmount": "11772400594",
+        "outputAmount": "194279546565256",
+        "minimumAmountOut": "192336751099603",
+        "nextSqrtPrice": "158078448633717320"
+      }
+    },
+    {
+      "requested": 30031.634169,
+      "used": 30031.634169,
+      "unfilled": 0,
+      "output": 384779819.665684,
+      "minimumOutput": 380932021.469027,
+      "fee": 600.6326840000002,
+      "averagePrice": 0.00007804888051325818,
+      "curveImpactPct": 52.975801611714466,
+      "costVsSpotPct": 56.0977567499358,
+      "endPrice": 0.00011700798259937838,
+      "exact": {
+        "includedFeeInputAmount": "30031634169",
+        "excludedFeeInputAmount": "29431001485",
+        "outputAmount": "384779819665684",
+        "minimumAmountOut": "380932021469027",
+        "nextSqrtPrice": "199538851524109098"
+      }
+    },
+    {
+      "requested": 60063.268338,
+      "used": 60063.268338,
+      "unfilled": 0,
+      "output": 571610033.003699,
+      "minimumOutput": 565893932.673662,
+      "fee": 1201.265367,
+      "averagePrice": 0.0001050773514635131,
+      "curveImpactPct": 105.95160322522901,
+      "costVsSpotPct": 110.15469716945789,
+      "endPrice": 0.00021208032016553443,
+      "exact": {
+        "includedFeeInputAmount": "60063268338",
+        "excludedFeeInputAmount": "58862002971",
+        "outputAmount": "571610033003699",
+        "minimumAmountOut": "565893932673662",
+        "nextSqrtPrice": "268639523010443283"
+      }
+    },
+    {
+      "requested": 120126.536676,
+      "used": 120126.536676,
+      "unfilled": 0,
+      "output": 754875232.329085,
+      "minimumOutput": 747326480.005794,
+      "fee": 2402.530734,
+      "averagePrice": 0.00015913429336575623,
+      "curveImpactPct": 211.90320645045762,
+      "costVsSpotPct": 218.2685780119687,
+      "endPrice": 0.0004864180642966867,
+      "exact": {
+        "includedFeeInputAmount": "120126536676",
+        "excludedFeeInputAmount": "117724005942",
+        "outputAmount": "754875232329085",
+        "minimumAmountOut": "747326480005794",
+        "nextSqrtPrice": "406840865980763765"
+      }
+    },
+    {
+      "requested": 180189.805014,
+      "used": 122578.098649,
+      "unfilled": 57611.706365000005,
+      "output": 759746916.240503,
+      "minimumOutput": 752149447.078097,
+      "fee": 2451.5619730000035,
+      "averagePrice": 0.0001613406991575035,
+      "curveImpactPct": 216.22776168502233,
+      "costVsSpotPct": 222.68138947456632,
+      "endPrice": 0.0005,
+      "exact": {
+        "includedFeeInputAmount": "122578098649",
+        "excludedFeeInputAmount": "120126536676",
+        "outputAmount": "759746916240503",
+        "minimumAmountOut": "752149447078097",
+        "nextSqrtPrice": "412481737123559485"
+      }
+    }
+  ],
+  "feeWindows": [
+    {
+      "minute": 0,
+      "requested": 1000,
+      "used": 1000,
+      "unfilled": 0,
+      "output": 19260248.683059,
+      "minimumOutput": 19067646.196228,
+      "fee": 20,
+      "averagePrice": 0.00005192040956769077,
+      "curveImpactPct": 1.7639999646649418,
+      "costVsSpotPct": 3.840816290474436,
+      "endPrice": 0.000051779559862632424,
+      "exact": {
+        "includedFeeInputAmount": "1000000000",
+        "excludedFeeInputAmount": "980000000",
+        "outputAmount": "19260248683059",
+        "minimumAmountOut": "19067646196228",
+        "nextSqrtPrice": "132739109489935119"
+      }
+    },
+    {
+      "minute": 30,
+      "requested": 1000,
+      "used": 1000,
+      "unfilled": 0,
+      "output": 19405074.270662,
+      "minimumOutput": 19211023.527955,
+      "fee": 12.5,
+      "averagePrice": 0.00005153291278621245,
+      "curveImpactPct": 1.7774999643907607,
+      "costVsSpotPct": 3.0658227487501577,
+      "endPrice": 0.0000517932989139788,
+      "exact": {
+        "includedFeeInputAmount": "1000000000",
+        "excludedFeeInputAmount": "987500000",
+        "outputAmount": "19405074270662",
+        "minimumAmountOut": "19211023527955",
+        "nextSqrtPrice": "132756718643887764"
+      }
+    },
+    {
+      "minute": 60,
+      "requested": 1000,
+      "used": 1000,
+      "unfilled": 0,
+      "output": 19549861.443367,
+      "minimumOutput": 19354362.828933,
+      "fee": 5,
+      "averagePrice": 0.00005115125766475886,
+      "curveImpactPct": 1.7909999641214647,
+      "costVsSpotPct": 2.3025125267552182,
+      "endPrice": 0.000051807039787825155,
+      "exact": {
+        "includedFeeInputAmount": "1000000000",
+        "excludedFeeInputAmount": "995000000",
+        "outputAmount": "19549861443367",
+        "minimumAmountOut": "19354362828933",
+        "nextSqrtPrice": "132774327797840409"
+      }
+    }
+  ],
+  "notes": [],
+  "sdkConfigDecimalIntegers": {
+    "poolFees": {
+      "baseFee": {
+        "cliffFeeNumerator": "20000000",
+        "firstFactor": 60,
+        "secondFactor": "60",
+        "thirdFactor": "250000",
+        "baseFeeMode": 0
+      },
+      "dynamicFee": null
+    },
+    "collectFeeMode": 0,
+    "migrationOption": 1,
+    "activationType": 1,
+    "tokenType": 0,
+    "tokenDecimal": 6,
+    "partnerLiquidityPercentage": 0,
+    "partnerPermanentLockedLiquidityPercentage": 0,
+    "creatorLiquidityPercentage": 0,
+    "creatorPermanentLockedLiquidityPercentage": 100,
+    "migrationQuoteThreshold": "120126536676",
+    "sqrtStartPrice": "130438180040122801",
+    "lockedVesting": {
+      "amountPerPeriod": "0",
+      "cliffDurationFromMigrationTime": "0",
+      "frequency": "0",
+      "numberOfPeriod": "0",
+      "cliffUnlockAmount": "0"
+    },
+    "migrationFeeOption": 2,
+    "tokenSupply": {
+      "preMigrationTokenSupply": "1000000000000000",
+      "postMigrationTokenSupply": "1000000000000000"
+    },
+    "creatorTradingFeePercentage": 0,
+    "tokenUpdateAuthority": 1,
+    "migrationFee": {
+      "feePercentage": 0,
+      "creatorFeePercentage": 0
+    },
+    "migratedPoolFee": {
+      "collectFeeMode": 0,
+      "dynamicFee": 0,
+      "poolFeeBps": 0
+    },
+    "poolCreationFee": "0",
+    "partnerLiquidityVestingInfo": {
+      "vestingPercentage": 0,
+      "bpsPerPeriod": 0,
+      "numberOfPeriods": 0,
+      "cliffDurationFromMigrationTime": 0,
+      "frequency": 0
+    },
+    "creatorLiquidityVestingInfo": {
+      "vestingPercentage": 0,
+      "bpsPerPeriod": 0,
+      "numberOfPeriods": 0,
+      "cliffDurationFromMigrationTime": 0,
+      "frequency": 0
+    },
+    "migratedPoolBaseFeeMode": 0,
+    "migratedPoolMarketCapFeeSchedulerParams": {
+      "numberOfPeriod": 0,
+      "sqrtPriceStepBps": 0,
+      "schedulerExpirationDuration": 0,
+      "reductionFactor": "0"
+    },
+    "enableFirstSwapWithMinFee": false,
+    "compoundingFeeBps": 0,
+    "padding": [],
+    "curve": [
+      {
+        "sqrtPrice": "412481737123559485",
+        "liquidity": "144931310088503867514377031260474"
+      },
+      {
+        "sqrtPrice": "79226673521066979257578248091",
+        "liquidity": "3261519081802404239767911"
+      }
+    ]
+  }
+}

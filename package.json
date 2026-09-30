@@ -1,0 +1,31 @@
+{
+  "name": "curvescope",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible pre-launch stress reports for Meteora DBC builders",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@meteora-ag/dynamic-bonding-curve-sdk": "1.5.13",
+    "@solana/web3.js": "1.98.4",
+    "bn.js": "5.2.2",
+    "decimal.js": "10.6.0",
+    "buffer": "6.0.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "5.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4",
+    "vite-plugin-node-polyfills": "^0.24.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "packageManager": "pnpm@11.25.0"
+}
