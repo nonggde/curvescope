@@ -14,7 +14,7 @@ Meteora is central to the implementation. The app uses @meteora-ag/dynamic-bondi
 
 Built during the hackathon on September 30, 2026 with AI coding assistance, this is a working developer-tool prototype. It has no claimed mainnet volume, revenue or validated customer traction. The next step is to test the review workflow with launchpad teams and add report diffs for continuous integration.
 
-**Project GitHub Link:** Use the verified published repository URL.
+**Project GitHub Link:** https://github.com/nonggde/curvescope
 
 **Project Website:** Use the verified deployment URL if available.
 
@@ -22,7 +22,7 @@ Built during the hackathon on September 30, 2026 with AI coding assistance, this
 
 **Did you submit to official Crypto World's Fair?** The owner confirmed on September 30 that no main-hackathon submission had yet been made. Answer **No** until actual submission is complete; never state Yes based on preparing files.
 
-**Colosseum project links:** Add only after the actual platform creates them.
+**Colosseum project draft:** https://colosseum.com/arena/projects/curvescope-1 (draft, not a final submission).
 
 ## Colosseum product description
 
