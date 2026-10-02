@@ -16,7 +16,7 @@ Built during the hackathon on September 30, 2026 with AI coding assistance, this
 
 **Project GitHub Link:** https://github.com/nonggde/curvescope
 
-**Project Website:** Use the verified deployment URL if available.
+**Project Website:** https://nonggde.github.io/curvescope/
 
 **Pitch deck / Loom / video:** `docs/curvescope-pitch.pptx`, published with the repository; web brief at `pitch.html`.
 
